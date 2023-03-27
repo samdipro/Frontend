@@ -158,16 +158,18 @@
         }
       }
 
-      .capabilities {
-        height: fit-content;
-      }
-
       #capabilities {
         font-size: x-large;
       }
+      .capabilities {
+        height: fit-content;
+      }
+      .cap1 {
+        text-align: center;
+      }
       /* contact */
       .contact-grid {
-        min-height: 500px;
+        /* min-height: 500px; */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 1rem;
@@ -216,8 +218,8 @@
             <h1>Hello</h1>
             <h3>I'm Jack Norton,</h3>
             <h3>a Web Designer</h3>
-            <br />
-            <button>READ MORE</button>
+            <!-- <br /> -->
+            <a href="#about"><button>READ MORE</button></a>
           </div>
         </div>
       </section>
@@ -227,6 +229,7 @@
         <div class="profile">
           <center><h1>PROFILE</h1></center>
           <center><h4>I'm a creative multitasking developer</h4></center>
+          <br />
         </div>
         <div id="about">
           <div id="aboutme">
@@ -280,8 +283,7 @@
               Sample text. Click to select the text box. Click again or double
               click to start editing the text.
             </h3>
-            <br />
-            <button>READ MORE</button>
+            <a href="#capabilities"><button>READ MORE</button></a>
           </div>
           <img src="./pic/idea.png" alt="pro" />
         </div>
@@ -289,15 +291,13 @@
 
       <section id="capabilities">
         <div class="cap1">
-          <center>
-            <h2>CAPABILITIES</h2>
-            <p>
-              The result of our company branding process is a comprehensive
-              brand guideline that can be used to design
-              <a href="#">marketing website</a> and other design assets like
-              brand illustrations that reflect the new brand.
-            </p>
-          </center>
+          <h2>CAPABILITIES</h2>
+          <p>
+            The result of our company branding process is a comprehensive brand
+            guideline that can be used to design
+            <a href="#">marketing website</a> and other design assets like brand
+            illustrations that reflect the new brand.
+          </p>
         </div>
 
         <div class="capabilities-grid">
@@ -372,7 +372,9 @@
           <div class="contact3">
             <input type="text" placeholder="Enter Your Name" />
             <input type="email" placeholder="Enter a valid email address" />
-            <textarea name="" id="" cols="26" rows="10"></textarea>
+            <div>
+              <textarea name="" id="" cols="32" rows="10"></textarea>
+            </div>
           </div>
         </div>
       </section>
