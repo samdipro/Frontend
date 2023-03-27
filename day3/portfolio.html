@@ -12,7 +12,7 @@
       * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
       }
       :root {
         --yellow: #fdd460;
@@ -96,13 +96,14 @@
         background-color: white;
       }
 
-      /* about */
+      /* Profile about */
       #about {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 1rem;
         min-height: 500px;
         font-size: x-large;
+        /* margin: auto 0; */
       }
       #about img {
         width: 80%;
@@ -146,7 +147,7 @@
         min-height: 500px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 15px;
         padding: 10px;
         font-size: x-large;
       }
@@ -161,10 +162,10 @@
         height: fit-content;
       }
 
-      /* contact */
       #capabilities {
         font-size: x-large;
       }
+      /* contact */
       .contact-grid {
         min-height: 500px;
         display: grid;
@@ -191,6 +192,13 @@
       }
       .contact2 h3 {
         margin-top: 10px;
+      }
+
+      .contact3 input {
+        padding: 10px;
+        font-size: larger;
+        margin-bottom: 5px;
+        /* max-width: 100px; */
       }
     </style>
   </head>
@@ -364,7 +372,7 @@
           <div class="contact3">
             <input type="text" placeholder="Enter Your Name" />
             <input type="email" placeholder="Enter a valid email address" />
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" id="" cols="26" rows="10"></textarea>
           </div>
         </div>
       </section>
