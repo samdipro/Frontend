@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Band</title>
+    <style>
+      :root {
+        --black: #000000;
+        --secondBlack: #29272a;
+        --white: #ffffff;
+        --gray: #cccccc;
+        --card: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+      body {
+        font-family: "Courier New", Courier, monospace;
+        background-color: var(--gray);
+      }
+      .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        /* box-sizing: border-box; */
+        /* padding: 0 5px; */
+      }
+      .sub-title {
+        font-weight: bold;
+        font-size: x-large;
+        padding: 10px;
+      }
+      #navbar {
+        display: flex;
+        background-color: var(--black);
+        justify-content: center;
+        /* box-shadow: var(--card); */
+      }
+      .nav-content {
+        padding: 15px;
+        color: var(--white);
+        font-weight: bold;
+      }
+      .nav-content:hover {
+        background-color: var(--gray);
+        color: var(--black);
+      }
+      .sticky-nav {
+        position: sticky;
+        top: 0;
+      }
+      /* showcase */
+      .main-picture img {
+        box-shadow: var(--card);
+      }
+      /* members */
+      #members {
+        padding: 20px;
+      }
+      .show-members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .main-picture img {
+        width: 100%;
+        height: auto;
+      }
+      .show-members img {
+        height: 230px;
+        width: auto;
+        box-shadow: var(--card);
+      }
+
+      /* contact */
+      .input-text input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        background-color: var(--gray);
+        width: 100%;
+        font-size: large;
+        margin-bottom: 5px;
+      }
+      .btn-send button {
+        height: 40px;
+        width: 80px;
+        padding: 5px;
+        font-weight: bold;
+        font-size: larger;
+        box-shadow: var(--card);
+        background-color: var(--black);
+        color: var(--white);
+        border-radius: 10%;
+      }
+      .btn-send button:hover {
+        background-color: var(--gray);
+        color: var(--black);
+        cursor: pointer;
+      }
+      .show-contact2 img {
+        width: 100%;
+        height: auto;
+      }
+      .input-contact {
+        margin: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sticky-nav">
+      <div id="navbar">
+        <a href="#" class="nav-content">Home</a>
+        <a href="#about" class="nav-content">About</a>
+        <a href="#members" class="nav-content">Members</a>
+        <a href="#contact" class="nav-content">Contact</a>
+      </div>
+    </div>
+    <div class="container">
+      <div id="show">
+        <div class="main-picture">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Beatles_ad_1965_just_the_beatles_crop.jpg/640px-Beatles_ad_1965_just_the_beatles_crop.jpg"
+            alt="band picture"
+          />
+        </div>
+      </div>
+
+      <div id="about">
+        <div class="sub-title"><center>The Band</center></div>
+        <p>
+          This is our band website. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+          odit. Possimus, obcaecati voluptatem, neque repellendus eius
+          dignissimos quisquam unde accusamus impedit et quo suscipit,
+          cupiditate id. Optio corporis reiciendis sapiente a earum doloribus
+          rerum repellendus, consequuntur accusamus distinctio consequatur
+          omnis, quibusdam impedit! Provident nisi quibusdam odio, vero sit,
+          sint soluta omnis porro, pariatur cumque sunt harum. Debitis quibusdam
+          aspernatur consequatur saepe corporis non beatae voluptate architecto
+          in, harum, culpa explicabo.
+        </p>
+      </div>
+
+      <div id="members">
+        <div>
+          <center>
+            <div class="sub-title">Band Members</div>
+          </center>
+        </div>
+        <div class="show-members">
+          <div class="members-pictures">
+            <figure>
+              <img src="./pic/john.jpg" alt="John" />
+              <figcaption>
+                <center><b>John Lennon</b></center>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="members-pictures">
+            <figure>
+              <img src="./pic/paul.jpg" alt="Paul" />
+              <figcaption>
+                <center><b>Paul McCartney</b></center>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="members-pictures">
+            <figure>
+              <img src="./pic/george.jpg" alt="George" />
+              <figcaption>
+                <center><b>George Harrison</b></center>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="members-pictures">
+            <figure>
+              <img src="./pic/ringo.jpg" alt="Ringo" />
+              <figcaption>
+                <center><b>Ringo Starr</b></center>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact">
+        <div class="show-contact1">
+          <div class="sub-title"><center>CONTACT</center></div>
+          <center>
+            <div>Chicago, US</div>
+            <div>Phone: +00 151515</div>
+            <div>Email: mail@mail.com Fan? Drop a note!</div>
+            <br />
+            <div>Fan? Drop a note!</div>
+            <br />
+          </center>
+          <div class="input-contact">
+            <div class="input-text">
+              <input type="text" placeholder="Name" />
+            </div>
+            <div class="input-text">
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-text">
+              <input type="text" placeholder="Message" />
+            </div>
+            <br />
+            <div class="btn-send">
+              <center><button>SEND</button></center>
+            </div>
+          </div>
+          <br />
+        </div>
+        <div class="show-contact2">
+          <img src="https://www.w3schools.com/w3css/map.jpg" alt="city-map" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gothic+A1&family=Sawarabi+Gothic&display=swap");
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Try</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --yellow: #fdd460;
+      }
+      .container {
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+      .color-yellow {
+        background-color: var(--yellow);
+      }
+
+      body {
+        font-family: "Sawarabi Gothic", sans-serif;
+      }
+
+      .card {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        background-color: #f2f2f2;
+        padding: 5px;
+      }
+
+      /* navigation */
+      nav {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* position: sticky;
+        top: 0; */
+      }
+      nav i {
+        font-size: x-large;
+      }
+      nav img {
+        width: 35px;
+        height: 35px;
+      }
+
+      /* showcase */
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 500px;
+      }
+      @media (max-width: 800px) {
+        .flex {
+          justify-content: center;
+        }
+      }
+      .flex img,
+      .flex .head-text {
+        min-width: 100px;
+        max-width: 500px;
+      }
+      .flex img {
+        height: 100%;
+      }
+      .head-text {
+        font-size: xx-large;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+      }
+      .head-text button {
+        width: 150px;
+        height: 40px;
+        border: 2px solid black;
+        background-color: white;
+        font-weight: bolder;
+        cursor: pointer;
+      }
+      .head-text button:hover {
+        background-color: black;
+        color: white;
+      }
+      #show .head-text h1 {
+        padding: 0 0 0 7px;
+        background-color: white;
+      }
+
+      /* about */
+      #about {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1rem;
+        min-height: 500px;
+        font-size: x-large;
+      }
+      #about img {
+        width: 80%;
+        height: auto;
+        border-radius: 100%;
+      }
+      #profile .profile h1,
+      #profile .profile h4 {
+        font-size: x-large;
+      }
+      #detail i {
+        font-size: x-large;
+        color: black;
+      }
+      #detail i:hover {
+        color: var(--yellow);
+      }
+      @media (max-width: 500px) {
+        #about {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+
+      /* IDEA */
+      #idea h3,
+      #ide h4 {
+        font-size: x-large;
+      }
+      #idea .flex img {
+        max-height: 400px;
+      }
+      #idea .flex {
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* CAPABILITIES */
+      .capabilities-grid {
+        min-height: 500px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px;
+        font-size: x-large;
+      }
+      @media (max-width: 500px) {
+        .capabilities-grid {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+
+      .capabilities {
+        height: fit-content;
+      }
+
+      /* contact */
+      #capabilities {
+        font-size: x-large;
+      }
+      .contact-grid {
+        min-height: 500px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1rem;
+      }
+      @media (max-width: 500px) {
+        .contact-grid {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+      .contact1,
+      .contact2,
+      .contact3 {
+        padding: 5px;
+      }
+      .contact1 i {
+        font-size: x-large;
+        color: black;
+      }
+      .contact1 i:hover {
+        color: white;
+      }
+      .contact2 h3 {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="#"><img src="./pic/logo.png" alt="Logo" /></a>
+        <a href="#"><i class="fa-solid fa-bars"></i></a>
+      </nav>
+
+      <section id="show" class="color-yellow">
+        <div class="flex">
+          <img src="./pic/deadpooll.png" alt="pro" />
+          <div class="head-text">
+            <h1>Hello</h1>
+            <h3>I'm Jack Norton,</h3>
+            <h3>a Web Designer</h3>
+            <br />
+            <button>READ MORE</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="profile" class="">
+        <br />
+        <div class="profile">
+          <center><h1>PROFILE</h1></center>
+          <center><h4>I'm a creative multitasking developer</h4></center>
+        </div>
+        <div id="about">
+          <div id="aboutme">
+            <h3>About me</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque aperiam eveniet corrupti dolorum, aspernatur voluptatum
+              porro qui inventore quo quos in. Nihil suscipit natus
+              necessitatibus ullam cupiditate delectus a enim.
+            </p>
+          </div>
+          <center>
+            <img
+              src="https://i.pinimg.com/564x/ed/ff/d9/edffd94c476e8e57f4b604fe5ea2aafe--deadpool-pics-dead-pool.jpg"
+              alt=""
+            />
+          </center>
+
+          <div id="detail">
+            <h3>Details</h3>
+            <br />
+            <h4>Name:</h4>
+            <p>Jack Norton</p>
+            <h4>Age:</h4>
+            <p>33 years</p>
+            <h4>Location</h4>
+            <p>'s-Hertogenbosch, The</p>
+            <p>Netherlands, Earth</p>
+            <br />
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com/" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="idea" class="color-yellow">
+        <div class="flex">
+          <div class="head-text">
+            <h1>Hello</h1>
+            <h3>
+              I am equally happy working across both print and digital media
+            </h3>
+            <h3>
+              Sample text. Click to select the text box. Click again or double
+              click to start editing the text.
+            </h3>
+            <br />
+            <button>READ MORE</button>
+          </div>
+          <img src="./pic/idea.png" alt="pro" />
+        </div>
+      </section>
+
+      <section id="capabilities">
+        <div class="cap1">
+          <center>
+            <h2>CAPABILITIES</h2>
+            <p>
+              The result of our company branding process is a comprehensive
+              brand guideline that can be used to design
+              <a href="#">marketing website</a> and other design assets like
+              brand illustrations that reflect the new brand.
+            </p>
+          </center>
+        </div>
+
+        <div class="capabilities-grid">
+          <div class="capabilities card">
+            <h4>BRAND STRATEGY</h4>
+            <p>Brand equity audit</p>
+            <p>Audience analysis</p>
+            <p>Competitive review</p>
+            <p>Strategic direction</p>
+          </div>
+          <div class="capabilities card">
+            <h4>BRAND STRATEGY</h4>
+            <p>Brand equity audit</p>
+            <p>Audience analysis</p>
+            <p>Competitive review</p>
+            <p>Strategic direction</p>
+          </div>
+          <div class="capabilities card">
+            <h4>BRAND STRATEGY</h4>
+            <p>Brand equity audit</p>
+            <p>Audience analysis</p>
+            <p>Competitive review</p>
+            <p>Strategic direction</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="color-yellow">
+        <br />
+        <div class="contact-grid">
+          <div class="contact1">
+            <h2>GET IN TOUCH</h2>
+            <b>
+              <p>
+                We can ensure reliability, low cost fares and most important,
+                with safety and comfort in mind.
+              </p>
+            </b>
+            <p>
+              Etiam sit amet convallis erat – class aptent taciti sociosqu ad
+              litora torquent per conubia! Maecenas gravida lacus. Lorem etiam
+              sit amet convallis erat
+            </p>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com/" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="contact2">
+            <h3>CALL ME</h3>
+            <div>
+              <p>1 (234) 567-891</p>
+              <p>1 (234) 987-654</p>
+            </div>
+            <h3>LOCATION</h3>
+            <div>
+              <p>121 Rock Sreet, 21 Avenue,</p>
+              <p>New York, NY 92103-9000</p>
+            </div>
+            <h3>OUR TOP SERVICE</h3>
+            <div>
+              <p>Design</p>
+              <p>Development</p>
+              <p>Marketing</p>
+            </div>
+          </div>
+          <div class="contact3">
+            <input type="text" placeholder="Enter Your Name" />
+            <input type="email" placeholder="Enter a valid email address" />
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/c8b52f48c0.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

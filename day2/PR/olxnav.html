@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OLX | Nav</title>
+    <style>
+      :root {
+        --gray: #eff1f3;
+        --shadow-blue: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        --shadow-airbnb: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 5px;
+        background-color: var(--gray);
+        box-shadow: var(--shadow-airbnb);
+      }
+      #navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      #lokasi input,
+      #barang input {
+        border: none;
+      }
+      #logo img {
+        height: 30px;
+        width: auto;
+      }
+      #lokasi {
+        background-color: white;
+        box-shadow: var(--shadow-blue);
+        padding: 3px;
+        display: flex;
+        align-items: center;
+      }
+      #barang {
+        border: 1.5px solid black;
+        background-color: white;
+      }
+      #barang #search {
+        padding: 5px;
+        background-color: black;
+        color: white;
+        height: 100%;
+      }
+      #barang input {
+        height: 100%;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="navbar">
+        <div id="logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/OLX_green_logo.svg/2560px-OLX_green_logo.svg.png"
+            alt="logo"
+          />
+        </div>
+        <div id="lokasi">
+          <div class="input-icons">
+            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            <input type="search" class="input-field" />
+            <a href="#"><i class="fa-solid fa-chevron-down" id="arrow"></i></a>
+          </div>
+        </div>
+        <div id="barang">
+          <input type="search" />
+
+          <i class="fa-solid fa-magnifying-glass" id="search"></i>
+        </div>
+        <div id="login">
+          <a href="#">Login/Daftar</a>
+        </div>
+        <div id="jual">
+          <button>Jual</button>
+        </div>
+      </nav>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/c8b52f48c0.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

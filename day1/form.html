@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <form action="" method="post">
+      <table>
+        <tr>
+          <th>Nama</th>
+          <td><input type="text" name="input" id="txtnama" /></td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td><input type="email" name="input" id="txtemail" /></td>
+        </tr>
+        <tr>
+          <th>Password</th>
+          <td><input type="password" name="input" id="txtPassword" /></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>
+            <input type="checkbox" name="cb" id="cbFE" />Front End
+            <input type="checkbox" name="cb" id="cbBE" />Back End
+          </td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td>
+            <input type="radio" name="rd" id="rdpria" />Pria
+            <input type="radio" name="rd" id="rdwanita" />Wanita
+          </td>
+        </tr>
+        <tr>
+          <th>Umur</th>
+          <td><input type="number" name="input" id="txtUmur" /></td>
+        </tr>
+        <tr>
+          <th>Alamat</th>
+          <td>
+            <textarea
+              name="input"
+              id="txtAlamat"
+              cols="21"
+              rows="10"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <center>
+              <input type="submit" value="OK" onclick="ok()" />
+            </center>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+  <script>
+    function ok() {
+      let nama = document.getElementById("txtnama").value;
+      console.log(nama);
+      alert(nama);
+    }
+  </script>
+</html>
